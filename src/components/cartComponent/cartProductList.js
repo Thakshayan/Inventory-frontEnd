@@ -2,6 +2,14 @@ import React from 'react';
 import CartProduct from './cartProduct';
 
 const cartProductList = () =>{
+	const List = [
+		{img:'../images/product-6.jpg',name:'Bell Pepper',price:'$4.90'},
+		{img:'../images/product-5.jpg',name:'Bell Pepper',price:'$4.90'},
+		{img:'../images/product-4.jpg',name:'Bell Pepper',price:'$4.90'},
+		{img:'../images/product-1.jpg',name:'Bell Pepper',price:'$4.90'},
+		{img:'../images/product-2.jpg',name:'Bell Pepper',price:'$4.90'},
+	]
+	
     return(
         <div className="container">
 			<div className="row">
@@ -19,7 +27,11 @@ const cartProductList = () =>{
 						      </tr>
 						    </thead>
 						    <tbody>
-						      <CartProduct/>
+							  {List.map((cartItem)=>{
+								  return <CartProduct item={cartItem} />
+							  })
+						      
+							  }
 						    </tbody>
 						</table>
 					</div>

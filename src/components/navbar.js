@@ -17,14 +17,14 @@ const NavBar = ()=>{
               	<a className="dropdown-item" href="shop.html">Shop</a>
               	<a className="dropdown-item" href="wishlist.html">Wishlist</a>
                 <a className="dropdown-item" href="product-single.html">Single Product</a>
-                <a className="dropdown-item" href="cart.html">Cart</a>
+                <a className="dropdown-item" href="/cart">Cart</a>
                 <a className="dropdown-item" href="checkout.html">Checkout</a>
               </div>
             </li>
 	          <li className="nav-item"><a href="about.html" className="nav-link">About</a></li>
 	          <li className="nav-item"><a href="blog.html" className="nav-link">Blog</a></li>
 	          <li className="nav-item"><a href="contact.html" className="nav-link">Contact</a></li>
-	          <li className="nav-item cta cta-colored"><a href="cart.html" className="nav-link"><span className="icon-shopping_cart"></span>[0]</a></li>
+	          <li className="nav-item cta cta-colored"><a href="/cart" className="nav-link"><span className="icon-shopping_cart"></span>[0]</a></li>
 
 	        </ul>
 	      </div>

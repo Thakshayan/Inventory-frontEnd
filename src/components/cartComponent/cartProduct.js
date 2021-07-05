@@ -1,16 +1,16 @@
 import React from 'react';
-import Car from '../images/bg_1.jpg';
 
-const cartProduct = () => {
+
+const cartProduct = (props) => {
     return(
    
         <tr className="text-center">
 			<td className="product-remove col-md-1"><a href="#"><span className="ion-ios-close"></span></a></td>
 						        
-			<td className="image-prod col-md-2"><img className="img-fluid" src='../images/bg_1.jpg' /></td>
+			<td className="image-prod col-md-2"><img className="img-fluid" src={props.item.img} /></td>
 						        
 			<td className="product-name col-md-4">
-                <h3>Bell Pepper</h3>
+                <h3>{props.item.name}</h3>
                 <p>Far far away, behind the word mountains, far from the countries</p>
 			</td>
 						        
