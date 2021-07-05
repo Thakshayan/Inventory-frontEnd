@@ -7,25 +7,30 @@ import Header from './components/header';
 import Footer from './components/footer';
 
 import {Button} from '@material-ui/core';
-import { BrowserRouter} from 'react-router-dom';
+import { BrowserRouter as Router ,Switch,Route} from 'react-router-dom';
 
 import NavBar from './components/navbar'; 
 import Carousals from './components/carousal';
 import ProductCollection from './components/productComponent/productCollection';
+import Cart from './pages/Cart';
 
 
 
 ReactDOM.render(
   
-  <BrowserRouter>
-    <Header/>
-    <NavBar/>
-    <Carousals/>
-    <ProductCollection />
-    <Footer/>
+  <Router>
+    <Switch>
+      <Route exact path='/cart'><Cart/></Route>
+      <Route path='/'>
+        <Header/>
+        <NavBar/>
+        <Carousals/>
+        <ProductCollection />
+        <Footer/>
+      </Route>
+    </Switch>
     
-    
-  </BrowserRouter>,
+  </Router>,
   document.getElementById('root')
 );
 
