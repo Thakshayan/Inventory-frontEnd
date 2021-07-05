@@ -14,13 +14,14 @@ import Carousals from './components/carousal';
 import ProductCollection from './components/productComponent/productCollection';
 import Cart from './pages/Cart';
 
-
+import SingleProductView from './pages/SingleProduct';
 
 ReactDOM.render(
   
   <Router>
     <Switch>
       <Route exact path='/cart'><Cart/></Route>
+      <Route exact path='/single-product'><SingleProductView/></Route>
       <Route path='/'>
         <Header/>
         <NavBar/>

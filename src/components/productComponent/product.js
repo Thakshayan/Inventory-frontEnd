@@ -19,7 +19,7 @@ const Product = (props) =>{
 	    					</div>
 	    					<div className="bottom-area d-flex px-3">
 	    						<div className="m-auto d-flex">
-	    							<a href="javascript:void()" className="add-to-cart d-flex justify-content-center align-items-center text-center">
+	    							<a href="/single-product" className="add-to-cart d-flex justify-content-center align-items-center text-center">
 	    								<span><i className="ion-ios-menu"></i></span>
 	    							</a>
 	    							<a href="#0" className="buy-now d-flex justify-content-center align-items-center mx-1">
