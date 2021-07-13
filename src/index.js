@@ -3,35 +3,40 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+
+
+import { BrowserRouter,Switch,Route} from 'react-router-dom';
+
+//components
 import Header from './components/header';
+import NavBar from './components/navbar'; 
 import Footer from './components/footer';
 
-import {Button} from '@material-ui/core';
-import { BrowserRouter as Router ,Switch,Route} from 'react-router-dom';
-
-import NavBar from './components/navbar'; 
-import Carousals from './components/carousal';
-import ProductCollection from './components/productComponent/productCollection';
+//Pages
+import Home from './pages/Home';
+import About from './pages/About';
+import View from './pages/View';
 import Cart from './pages/Cart';
-
-import SingleProductView from './pages/SingleProduct';
+import SingleProductView from './components/productComponent/singleProduct';
 
 ReactDOM.render(
-  
-  <Router>
-    <Switch>
-      <Route exact path='/cart'><Cart/></Route>
-      <Route exact path='/single-product'><SingleProductView/></Route>
-      <Route path='/'>
-        <Header/>
-        <NavBar/>
-        <Carousals/>
-        <ProductCollection />
-        <Footer/>
-      </Route>
-    </Switch>
+ 
+  <BrowserRouter>
+    <Header/>
+    <NavBar/>
+      <Switch>
+        <Route path='/' exact component={Home} />
+        <Route path='/about' component={About} />
+        <Route path='/view' component={View}/>
+        <Route exact path='/cart'><Cart/></Route>
+        <Route exact path='/single-product'><SingleProductView/></Route>    
+         
+      </Switch>
+      
+    <Footer/>
     
-  </Router>,
+    
+  </BrowserRouter>,
   document.getElementById('root')
 );
 

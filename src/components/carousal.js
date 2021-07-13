@@ -1,23 +1,38 @@
-
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
+
 import background1 from './images/bg_1.jpg';
 
 
 
 
+
+
 const Carousals = ()=>{
+
+    
+
     return(
 
         <section id="home-section" class="hero">
-            <Carousel className="home-slider carousel1" useKeyboardArrows autoPlay showIndicators>
-        <div className="slider-item" style={{backgroundImage: `url(${background1})`}} >
+<Carousel showArrows={true} interval={1000} useKeyboardArrows autoPlay showIndicators >
+
+<div style={{
+      
+      position: `relative`,
+      textAlign: `center`,
+      color: `white`
+    }}>
+
+    <img src={background1} alt=""/>
+
+    <div className="slider-item legend" style={{background:`none`, color:`white`,top:`50%`}} >
             <div className="overlay"></div>
           <div className="container">
-            <div className="row slider-text justify-content-center align-items-center" data-scrollax-parent="true">
+            <div className="row slider-text justify-content-center align-items-center" data-scrollax-parent="true" style={{ color:`white!important`}}>
 
-              <div className="col-md-12  text-center">
-                <h1 className="mb-2">We serve Fresh Vegestables &amp; Fruits</h1>
+              <div className="col-md-12 ftco-animate text-center" >
+                <h1 className="mb-2" style={{ color:`white!important`}}>We serve Fresh Vegestables &amp; Fruits</h1>
                 <h2 className="subheading mb-4">We deliver organic vegetables &amp; fruits</h2>
                 <p><a href="#0" className="btn btn-primary">View Details</a></p>
               </div>
@@ -25,14 +40,21 @@ const Carousals = ()=>{
             </div>
           </div>
         </div>
+    
 
-        <div className="slider-item" >
+</div>
+
+<div>
+
+    <img src={background1} alt=""/>
+
+    <div className="slider-item legend" style={{background:`none`, color:`Red`,top:`50%`}} >
             <div className="overlay"></div>
           <div className="container">
-            <div className="row slider-text justify-content-center align-items-center" data-scrollax-parent="true">
+            <div className="row slider-text justify-content-center align-items-center" data-scrollax-parent="true" style={{ color:`white!important`}}>
 
-              <div className="col-md-12  text-center">
-                <h1 className="mb-2">We serve Fresh Vegestables &amp; Fruits</h1>
+              <div className="col-md-12  text-center" >
+                <h1 className="" style={{ color:`white!important`}}>We serve Fresh Vegestables &amp; Fruits</h1>
                 <h2 className="subheading mb-4">We deliver organic vegetables &amp; fruits</h2>
                 <p><a href="#0" className="btn btn-primary">View Details</a></p>
               </div>
@@ -40,12 +62,27 @@ const Carousals = ()=>{
             </div>
           </div>
         </div>
+</div>
+
+<div>
+
+    <img src={background1} alt="" />
+
+    <p className="legend">Legend 3</p>
+
+</div>
+
+<div>
+
+    <img src={background1} alt=""/>
+
+    <p className="legend">Legend 4</p>
+
+</div>
 
 
-        </Carousel>
 
-
-
+</Carousel>
         </section>
 
 

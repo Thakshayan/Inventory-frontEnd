@@ -1,4 +1,3 @@
-import React,{Component} from 'react';
 
 function Footer() {
         return(
@@ -68,7 +67,7 @@ function Footer() {
         <div className="row">
           <div className="col-md-12 text-center">
             <p>
-						  Copyright &copy;{new Date().getFullYear()} All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://www.quaxor.com" target="_blank">Quaxor</a>
+						  Copyright &copy;{new Date().getFullYear()} All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://www.quaxor.com" target="_blank" rel="noreferrer">Quaxor</a>
 						  
 						</p>
             
