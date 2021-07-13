@@ -1,15 +1,4 @@
-import React,{Component} from 'react';
-
-
-
-class Header extends Component{
-
-    constructor(props){
-        super(props);
-    }
-
-
-    render(){
+function Header(){
         return (
         <div className="py-1 bg-primary">
             <div className="container">
@@ -33,7 +22,7 @@ class Header extends Component{
             </div>
             
     </div>);
-    }
+    
 
 } 
 

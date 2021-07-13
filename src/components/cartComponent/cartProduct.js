@@ -5,7 +5,7 @@ const cartProduct = (props) => {
     return(
    
         <tr className="text-center">
-			<td className="product-remove col-md-1"><a href="#"><span className="ion-ios-close"></span></a></td>
+			<td className="product-remove col-md-1"><a href="#0"><span className="ion-ios-close"></span></a></td>
 						        
 			<td className="image-prod col-md-2"><img className="img-fluid" src={props.item.img} /></td>
 						        

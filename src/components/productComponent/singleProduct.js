@@ -13,18 +13,18 @@ const singleProduct = () =>{
     				<h3>Bell Pepper</h3>
     				<div className="rating d-flex">
 							<p className="text-left mr-4">
-								<a href="#" className="mr-2">5.0</a>
-								<a href="#"><span className="ion-ios-star-outline"></span></a>
-								<a href="#"><span className="ion-ios-star-outline"></span></a>
-								<a href="#"><span className="ion-ios-star-outline"></span></a>
-								<a href="#"><span className="ion-ios-star-outline"></span></a>
-								<a href="#"><span className="ion-ios-star-outline"></span></a>
+								<a href="#0" className="mr-2">5.0</a>
+								<a href="#0"><span className="ion-ios-star-outline"></span></a>
+								<a href="#0"><span className="ion-ios-star-outline"></span></a>
+								<a href="#0"><span className="ion-ios-star-outline"></span></a>
+								<a href="#0"><span className="ion-ios-star-outline"></span></a>
+								<a href="#0"><span className="ion-ios-star-outline"></span></a>
 							</p>
 							<p className="text-left mr-4">
-								<a href="#" className="mr-2" style={{color: '#000'}}>100 <span style={{color: '#bbb'}}>Rating</span></a>
+								<a href="#0" className="mr-2" style={{color: '#000'}}>100 <span style={{color: '#bbb'}}>Rating</span></a>
 							</p>
 							<p className="text-left">
-								<a href="#" className="mr-2" style={{color: '#000'}}>500 <span style={{color: '#bbb'}}>Sold</span></a>
+								<a href="#0" className="mr-2" style={{color: '#000'}}>500 <span style={{color: '#bbb'}}>Sold</span></a>
 							</p>
 						</div>
     				<p className="price"><span>$120.00</span></p>
