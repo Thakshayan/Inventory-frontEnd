@@ -1,8 +1,10 @@
 import {Link} from 'react-router-dom';
 import {useState} from 'react';
+import { useCart } from 'react-use-cart';
+import Cart from './cartComponent/cart';
 
 const NavBar = ()=>{
-
+	const {totalUniqueItems} = useCart();
     return(
         <nav className="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 	    <div className="container">
@@ -27,7 +29,7 @@ const NavBar = ()=>{
 	          <li className="nav-item"><Link to="/about" className="nav-link">About</Link></li>
 	          <li className="nav-item"><Link to="/view" className="nav-link">View</Link></li>
 	          <li className="nav-item"><Link to="/cart" className="nav-link">Cart</Link></li>
-	          <li className="nav-item cta cta-colored"><Link href="cart.html" className="nav-link"><span className="icon-shopping_cart"></span>[0]</Link></li>
+	          <li className="nav-item cta cta-colored"><Link href="cart.html" className="nav-link"><span className="icon-shopping_cart"></span>{totalUniqueItems}</Link></li>
 
 	        </ul>
 	      </div>

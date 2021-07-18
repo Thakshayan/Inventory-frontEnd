@@ -14,6 +14,7 @@ import Footer from './components/footer';
 
 //Pages
 import Home from './pages/Home';
+import CartPage from './pages/cartPage';
 import About from './pages/About';
 import View from './pages/View';
 import Cart from './pages/Cart';
@@ -28,7 +29,7 @@ ReactDOM.render(
         <Route path='/' exact component={Home} />
         <Route path='/about' component={About} />
         <Route path='/view' component={View}/>
-        <Route exact path='/cart'><Cart/></Route>
+        <Route exact path='/cart'><CartPage/></Route>
         <Route exact path='/single-product'><SingleProductView/></Route>    
          
       </Switch>
