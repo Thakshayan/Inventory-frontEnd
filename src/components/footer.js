@@ -1,8 +1,19 @@
+import Wave from 'react-wavify';
 
 function Footer() {
         return(
-
-            <footer className="ftco-footer ftco-section">
+<>
+<Wave
+        fill = '#82ae46'
+        paused={false}
+        options={{
+          height: 40,
+          amplitude: 40,
+          speed: 0.20,
+          points: 4
+        }}
+      />
+        <footer className="ftco-footer ftco-section">
       <div className="container">
       	<div className="row">
       		<div className="mouse">
@@ -75,7 +86,7 @@ function Footer() {
         </div>
       </div>
     </footer>
-
+</>
         );
     }
 
